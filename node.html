@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="no-ie">
+<!--<![endif]-->
+
+<head>
+   <!-- Meta-->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="">
+   <title>AWS</title>
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+   <!-- Bootstrap CSS-->
+   <link rel="stylesheet" href="app/css/bootstrap.css">
+   <!-- Vendor CSS-->
+   <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="vendor/animo/animate+animo.css">
+   <link rel="stylesheet" href="vendor/csspinner/csspinner.min.css">
+   <!-- START Page Custom CSS-->
+   <!-- Data Table styles-->
+   <link rel="stylesheet" href="vendor/datatable/extensions/datatable-bootstrap/css/dataTables.bootstrap.css">
+   <link rel="stylesheet" href="vendor/datatable/extensions/ColVis/css/dataTables.colVis.css">
+   <!-- END Page Custom CSS-->
+   <!-- App CSS-->
+   <link rel="stylesheet" href="app/css/style1.css">
+   <!-- Modernizr JS Script-->
+   <script src="vendor/modernizr/modernizr.js" type="application/javascript"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+   <!-- FastClick for mobiles-->
+   <script src="vendor/fastclick/fastclick.js" type="application/javascript"></script>
+   <script type="text/javascript" src="/eel.js"></script>
+   <script type="text/javascript" src="/script.js"></script>
+   <style type="text/css">
+   body{
+    margin-bottom: 60px;
+    background-image: url(app/img/bg7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+</style>
+</head>
+<body>
+                   
+                 
+<div class="container">
+  <img src="app/img/aws.png" class="aws">
+     <h2>AWS INSTANCES</h2>
+       
+               <div class="form-group">
+                           <button type="submit" class="btn btn-block btn-info" onclick="Get_start()">Start All Nodes</button>
+
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-block btn-danger" onclick="Get_stop()">Stop All Nodes</button>
+
+                        <!-- </div>
+                        <h3>Select Specific Nodes</h3>
+                        <form>
+
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxes()">
+                              
+                            <select>
+                                <option value="" selected disabled hidden>Select here</option>
+                            </select>
+                            <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxes">
+                           
+                           <label for="one"><input type="checkbox" name="Instances" id="one" value="Instances 1" width="50px"><b>Instances 1</b></label>
+                        
+                           <label for="two"><input type="checkbox" name="Instances" id="two" value="Instances 1" width="50px"><b>Instances 2</b></label>
+                           
+                           <label for="three"><input type="checkbox" name="Instances" id="three" value="Instances 1" width="50px"><b>Instances 3</b></label>
+
+                          </div>
+                           <br>
+
+                        <div>
+                           <button type="submit" class="btn btn-primary" onclick="Get_specific()">Start</button>
+                           <button type="submit" class="btn btn-primary" onclick="Get_specific()">Stop</button>
+                           </div> 
+                        </div>
+                
+       </form> -->
+       <script>
+         var expanded= false;
+
+             function showCheckboxes(){
+              var checkboxes = document.getElementById("checkboxes");
+                 if (!expanded) {
+                   checkboxes.style.display = "block";
+                   expanded = true;
+
+             }
+               else{
+                    checkboxes.style.display = "none";
+                    expanded = false;
+  }
+
+}
+       </script>
+
+
+</div>
